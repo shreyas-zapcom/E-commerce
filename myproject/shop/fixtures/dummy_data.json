@@ -1,0 +1,112 @@
+[{
+        "model": "shop.category",
+        "pk": 1,
+        "fields": {
+            "name": "Electronics"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 2,
+        "fields": {
+            "name": "Clothing"
+        }
+    },
+    {
+        "model": "shop.category",
+        "pk": 3,
+        "fields": {
+            "name": "Home Appliances"
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 1,
+        "fields": {
+            "name": "Smartphone",
+            "description": "A high-end smartphone with a great camera.",
+            "price": "699.99",
+            "category": 1
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 2,
+        "fields": {
+            "name": "Laptop",
+            "description": "A powerful laptop for all your needs.",
+            "price": "999.99",
+            "category": 1
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 3,
+        "fields": {
+            "name": "T-Shirt",
+            "description": "A comfortable cotton t-shirt.",
+            "price": "19.99",
+            "category": 2
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 4,
+        "fields": {
+            "name": "Jeans",
+            "description": "Stylish denim jeans.",
+            "price": "49.99",
+            "category": 2
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 5,
+        "fields": {
+            "name": "Refrigerator",
+            "description": "A spacious refrigerator with energy-saving features.",
+            "price": 499.99,
+            "category": 3
+        }
+    },
+    {
+        "model": "shop.product",
+        "pk": 6,
+        "fields": {
+            "name": "Washing Machine",
+            "description": "A front-loading washing machine with multiple settings.",
+            "price": "299.99",
+            "category": 3
+        }
+    },
+    {
+        "model": "shop.order",
+        "pk": 1,
+        "fields": {
+            "user": "John Doe",
+            "product": 1,
+            "quantity": 1,
+            "ordered_at": "2024-10-01T10:30:00Z"
+        }
+    },
+    {
+        "model": "shop.order",
+        "pk": 2,
+        "fields": {
+            "user": "Jane Smith",
+            "product": 3,
+            "quantity": 2,
+            "ordered_at": "2024-10-02T14:45:00Z"
+        }
+    },
+    {
+        "model": "shop.order",
+        "pk": 3,
+        "fields": {
+            "user": "Emily Johnson",
+            "product": 5,
+            "quantity": 1,
+            "ordered_at": "2024-10-03T09:15:00Z"
+        }
+    }
+]

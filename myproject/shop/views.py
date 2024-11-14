@@ -1,4 +1,4 @@
-# shop/views.py
+
 from rest_framework import viewsets, status
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -12,7 +12,7 @@ from rest_framework.permissions import IsAuthenticated
 
 
 def home(request):
-    return HttpResponse("Welcome to the API. Use /api/ to access the API endpoints.")
+    return HttpResponse('Welcome to the API. Use /api/ to access the API endpoints.')
 
 class CategoryViewSet(viewsets.ModelViewSet):
     queryset = Category.objects.all()
@@ -52,16 +52,15 @@ class LogoutView(APIView):
         return Response({"message": "Logged out successfully"}, status=status.HTTP_200_OK)
     
 
-# shop/views.py
+
 class UserOrdersView(APIView):
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
         orders = Order.objects.filter(user=request.user)
-        # Serialize and return orders
         return Response({"orders": "Order data here"})
 
-# shop/views.py
+
 class LoginView(APIView):
     permission_classes = [AllowAny]
 
@@ -69,7 +68,6 @@ class LoginView(APIView):
         username = request.data.get('username')
         password = request.data.get('password')
 
-        # Check if username and password are provided
         if not username or not password:
             return Response({"error": "Username and password are required."}, status=status.HTTP_400_BAD_REQUEST)
 
